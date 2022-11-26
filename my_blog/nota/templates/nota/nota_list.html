@@ -1,0 +1,44 @@
+{% extends "home/index.html" %}
+{% load static %}
+
+{% block my_blog_title %}
+Nota list
+{% endblock %}
+
+{% block my_blog_header %}
+<header class="masthead" style="background-image: url('/static/home/assets/img/about-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-15 col-lg-16 col-xl-14">
+                <div class="site-heading">
+                    <h1>Listado de notas</h1>
+                    <span class="subheading">My blog CoderHouse</span>
+                </div>
+            </div>
+        </div>
+        <a class="button_custom" href="{% url 'nota:nota-add' %}">Crear nueva nota</a>
+    </div>
+</header>
+{% endblock %}
+
+
+{% block my_blog_content %}
+    {% for nota in nota_list %}
+        <!-- Post preview-->
+        <div class="post-preview">
+            <a href="{% url 'nota:nota-detail' nota.id %}">
+                <h2 class="post-title">Este es el nota de {{ nota.name }}</h2>
+                <h3 class="post-subtitle">Que tiene el código: {{ nota.code }}</h3>
+            </a>
+            <p class="post-meta">
+                Creado por
+                <span style="color: #0b4956;" href="">{{ nota.owner.username }}</span>
+                ( {{ nota.created_at }} )
+            </p>
+        </div>
+        <!-- Divider-->
+        <hr class="my-4" />
+    {% endfor %}
+{% endblock %}
+
+
