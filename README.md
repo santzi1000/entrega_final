@@ -1,3 +1,35 @@
+# Nota del estudiante sobre el proyecto
+
+- para la realización de este proyecto, me apoyé fuertemente en los proyectos realizados durante las clases en Doder House,
+agradezco y reconozco por el mismo, tanto a el profesor como a los tutores a cargo.
+ 
+- en este proyecto en particular quise enfocarme en un blog que fuese de utilidad tanto para mi uso personal en calidad de Abogado
+litigante, como de mi oficina, generando una herramienta de uso práctico para mis colegas y empleados.
+ 
+para la elaboración de dicho blog me enfoque en la creación de 4 aplicaciones discriminadas de la siguiente manera:
+- notas: en la cual se podrán guardar notas útiles en el ejercicio de la profesión, misma que se compone de un título, una temática,
+un código que referencia el responsable de crearla así como el contenido literario y gráfico necesario
+ 
+-citas: esta aplicación se enfoca principalmente en agendar citas en las cuales se digitará el nombre del cliente, la fecha de la cita
+y se dispondrá de un campo para verificar si la cita en cuestión ya ha sido confirmada
+ 
+-clientes: este campo llevará un registro tanto del nombre como los apellidos de los clientes, así como también de su correo electrónico
+ 
+- procesos: esta es sin lugar a dudas la aplicación más importante de cara a mi ejercicio diario, en este campo se podrá relacionar
+los juzgados donde se adelantan dichos procesos, el tipo de proceso que se adelanta, es decir su naturaleza, el correo electrónico del despacho
+el cual es imprescindible para el ejercicio del litigio virtual y por ultimo el numero de radicado que le compete al proceso en cuestión, el cual es
+un serial único con el cual se pueden realizar las búsquedas virtuales de dichos expedientes.
+ 
+Para todo lo demás, seguí las instrucciones dadas por Coderhouse, y el proyecto de realización en clases respecto a la creación de usuarios y avatares.
+ 
+dejo también claridad de que el proyecto fue realizado en el idioma español puesto que el público al que estará dirigido posee dicha lengua como lengua materna
+y en el ejercicio del derecho en un país como Colombia (mi país natal) es un requisito sine qua non para toda actividad litigiosa dirigirse única y exclusivamente en dicha lengua; sin embargo soy consciente de la importancia en el campo del desarrollo del idioma inglés como lengua base de la programación.
+
+
+
+
+
+
 # Instrucciones para ejecutar este proyecto
 
 - Crear Directorio del proyecto My blog
@@ -14,7 +46,7 @@ ls
 
 - Clonar el proyecto y cambiar de rama
 ```bash
-git clone https://github.com/profecoder/django-coderhouse-project.git
+git clone https://github.com/profecoder/django-coderhouse-project.git #sin  lugar a dudas este proyecto fue la base angular para la realizacion de mi blog.
 
 cd django-coderhouse-project
 
